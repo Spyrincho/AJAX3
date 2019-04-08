@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgba(69,19,162,0.6)
+}
+
+body {
+  width: 80%;
+  margin: 10em auto;
+
+  display: grid;
+  grid-template-areas: "h1 table"
+  "search table"
+}
+
+h1 {
+  grid-area: h1;
+}
+
+input {
+  grid-area: search;
+
+  height: 3.5em;
+  max-height: 3.5em;
+
+  max-width: 30%;
+
+  border-radius: 1em;
+
+  text-align: center;
+}
+
+#informationTable {
+  grid-area: table;
+}
+
+#informationTable td:nth-child(even) {
+  border: 2px solid purple;
+  background: yellow;
+}
+
+#informationTable td:nth-child(odd) {
+  border: 2px solid purple;
+  background: pink;
+}
+
+#informationTable th:nth-child(even){
+  border: 2px solid maroon;
+  background: white;
+}
+
+#informationTable th:nth-child(odd){
+  border: 2px solid maroon;
+  background: white;
+}
